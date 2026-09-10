@@ -30,8 +30,8 @@ Using a 95% Wilson interval, the checkpoint-7000 aggregate estimate is approxima
 
 Detailed reports:
 
-- [Checkpoint 7000 evaluation](results/libero_spatial_7000.md)
-- [Checkpoint 5000 quick evaluation](results/libero_spatial_5000_quick.md)
+- Checkpoint 7000: [evaluation report](results/libero_spatial_7000.md) · [CSV data](results/libero_spatial_7000.csv)
+- Checkpoint 5000: [quick evaluation](results/libero_spatial_5000_quick.md) · [CSV data](results/libero_spatial_5000_quick.csv)
 - [Qualitative failure analysis](results/failure_analysis.md)
 
 ## Checkpoint 7000 per-task results
@@ -95,6 +95,12 @@ python examples/libero/main.py \
 ```
 
 Exact environment setup and dependency instructions are maintained in OpenPI's `examples/libero/README.md`.
+
+To convert an OpenPI evaluation log into the same task-level CSV format:
+
+```bash
+python scripts/summarize_libero_log.py evaluation.log -o results/evaluation.csv
+```
 
 ## Limitations
 
