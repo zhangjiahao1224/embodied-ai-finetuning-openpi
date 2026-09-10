@@ -9,6 +9,12 @@ This repository documents a low-memory LoRA fine-tuning and evaluation workflow 
 - Preserved per-task metrics and representative success/failure rollouts.
 - Verified checkpoint 5000 end-to-end with a separate 10-episode smoke test.
 
+## Demo
+
+The policy picks up the bowl from beside the plate and completes the placement task:
+
+![Checkpoint 7000 successful rollout](assets/libero_spatial_7000_demo.gif)
+
 ![LIBERO Spatial success rate by task](assets/libero_spatial_7000_success_rates.svg)
 
 ## Results
@@ -19,6 +25,8 @@ This repository documents a low-memory LoRA fine-tuning and evaluation workflow 
 | 5000 | Smoke test | 1 | 4 | 10 | 40% |
 
 The checkpoint-5000 result is a pipeline smoke test, not a statistically reliable head-to-head comparison. With only one rollout per task, its uncertainty is much larger than the checkpoint-7000 result.
+
+Using a 95% Wilson interval, the checkpoint-7000 aggregate estimate is approximately **50%–76%**. The checkpoint-5000 smoke test spans approximately **17%–69%**. These overlapping intervals reinforce that the quick test cannot establish a meaningful checkpoint ranking.
 
 Detailed reports:
 
@@ -87,6 +95,14 @@ python examples/libero/main.py \
 ```
 
 Exact environment setup and dependency instructions are maintained in OpenPI's `examples/libero/README.md`.
+
+## Limitations
+
+- The full result contains 50 episodes, with only five trials for each individual task.
+- Checkpoint 5000 was evaluated once per task and is included only as an end-to-end smoke test.
+- The runs cover LIBERO Spatial only; they do not establish performance on LIBERO Object, Goal, 10, or 90.
+- Failure categories are based on visual inspection of representative rollouts rather than instrumented event labels.
+- This repository records the experiment and small media artifacts but does not distribute checkpoints or training data.
 
 ## Project status
 
