@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">LIBERO Spatial success rate by task at checkpoint 7000</title>
+  <desc id="desc">Horizontal bar chart showing success rates from 20 to 100 percent across ten bowl placement conditions, based on five trials per task.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #24292f; }
+    .title { font-size: 22px; font-weight: 600; }
+    .subtitle, .tick { font-size: 13px; fill: #57606a; }
+    .label { font-size: 14px; }
+    .value { font-size: 13px; font-weight: 600; fill: #ffffff; }
+    .grid { stroke: #d0d7de; stroke-width: 1; }
+    .bar { fill: #2f81f7; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .subtitle, .tick { fill: #8b949e; }
+      .grid { stroke: #30363d; }
+      .bar { fill: #58a6ff; }
+    }
+  </style>
+  <text class="title" x="24" y="32">LIBERO Spatial · checkpoint 7000</text>
+  <text class="subtitle" x="24" y="54">Success rate by initial bowl position · 5 trials per task</text>
+  <line class="grid" x1="350" y1="75" x2="350" y2="475"/>
+  <line class="grid" x1="458" y1="75" x2="458" y2="475"/>
+  <line class="grid" x1="566" y1="75" x2="566" y2="475"/>
+  <line class="grid" x1="674" y1="75" x2="674" y2="475"/>
+  <line class="grid" x1="782" y1="75" x2="782" y2="475"/>
+  <line class="grid" x1="890" y1="75" x2="890" y2="475"/>
+  <text class="tick" x="350" y="498" text-anchor="middle">0%</text>
+  <text class="tick" x="458" y="498" text-anchor="middle">20%</text>
+  <text class="tick" x="566" y="498" text-anchor="middle">40%</text>
+  <text class="tick" x="674" y="498" text-anchor="middle">60%</text>
+  <text class="tick" x="782" y="498" text-anchor="middle">80%</text>
+  <text class="tick" x="890" y="498" text-anchor="middle">100%</text>
+  <text class="label" x="334" y="96" text-anchor="end">Next to ramekin</text><rect class="bar" x="350" y="80" width="540" height="22" rx="3"/><text class="value" x="882" y="96" text-anchor="end">100%</text>
+  <text class="label" x="334" y="136" text-anchor="end">On wooden cabinet</text><rect class="bar" x="350" y="120" width="540" height="22" rx="3"/><text class="value" x="882" y="136" text-anchor="end">100%</text>
+  <text class="label" x="334" y="176" text-anchor="end">Between plate and ramekin</text><rect class="bar" x="350" y="160" width="432" height="22" rx="3"/><text class="value" x="774" y="176" text-anchor="end">80%</text>
+  <text class="label" x="334" y="216" text-anchor="end">On cookie box</text><rect class="bar" x="350" y="200" width="432" height="22" rx="3"/><text class="value" x="774" y="216" text-anchor="end">80%</text>
+  <text class="label" x="334" y="256" text-anchor="end">Table center</text><rect class="bar" x="350" y="240" width="324" height="22" rx="3"/><text class="value" x="666" y="256" text-anchor="end">60%</text>
+  <text class="label" x="334" y="296" text-anchor="end">On ramekin</text><rect class="bar" x="350" y="280" width="324" height="22" rx="3"/><text class="value" x="666" y="296" text-anchor="end">60%</text>
+  <text class="label" x="334" y="336" text-anchor="end">On stove</text><rect class="bar" x="350" y="320" width="324" height="22" rx="3"/><text class="value" x="666" y="336" text-anchor="end">60%</text>
+  <text class="label" x="334" y="376" text-anchor="end">In top drawer</text><rect class="bar" x="350" y="360" width="216" height="22" rx="3"/><text class="value" x="558" y="376" text-anchor="end">40%</text>
+  <text class="label" x="334" y="416" text-anchor="end">Next to cookie box</text><rect class="bar" x="350" y="400" width="216" height="22" rx="3"/><text class="value" x="558" y="416" text-anchor="end">40%</text>
+  <text class="label" x="334" y="456" text-anchor="end">Next to plate</text><rect class="bar" x="350" y="440" width="108" height="22" rx="3"/><text class="value" x="450" y="456" text-anchor="end">20%</text>
+</svg>
